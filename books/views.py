@@ -1,31 +1,3 @@
-# from rest_framework.views import APIView
-# from rest_framework.response import Response
-# from rest_framework.pagination import PageNumberPagination
-# from django.db.models import Q
-# from .models import Book
-# from .serializers import BookSerializer
-
-# class BookListView(APIView):
-#     def get(self, request):
-#         filters = Q()
-#         if 'language' in request.query_params:
-#             filters &= Q(language__icontains=request.query_params['language'])
-#         if 'title' in request.query_params:
-#             filters &= Q(title__icontains=request.query_params['title'])
-#         if 'author' in request.query_params:
-#             filters &= Q(author_name__icontains=request.query_params['author'])
-#         if 'topic' in request.query_params:
-#             topic = request.query_params['topic']
-#             filters &= Q(subject__icontains=topic) | Q(bookshelf__icontains=topic)
-
-#         books = Book.objects.filter(filters).order_by('-download_count')
-#         paginator = PageNumberPagination()
-#         paginator.page_size = 25
-#         paginated_books = paginator.paginate_queryset(books, request)
-#         serializer = BookSerializer(paginated_books, many=True)
-#         return paginator.get_paginated_response(serializer.data)
-
-
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import generics

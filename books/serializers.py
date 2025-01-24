@@ -1,21 +1,3 @@
-# from rest_framework import serializers
-# from .models import Book, BookDownloadLink
-
-# class BookDownloadLinkSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = BookDownloadLink
-#         fields = ['mime_type', 'url']
-
-# class BookSerializer(serializers.ModelSerializer):
-#     download_links = BookDownloadLinkSerializer(many=True, required=False)
-
-#     class Meta:
-#         model = Book
-#         fields = [
-#             'id', 'title', 'author_name', 'genre', 'language', 'subject',
-#             'bookshelf', 'download_count', 'download_links'
-#         ]
-
 from rest_framework import serializers
 from .models import (
     AuthGroup, AuthPermission, AuthUser, BooksAuthor, BooksBook,

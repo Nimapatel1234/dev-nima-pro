@@ -1,18 +1,3 @@
-# from django.db import models
-
-# class Book(models.Model):
-#     title = models.CharField(max_length=255)
-#     author_name = models.CharField(max_length=255)
-#     genre = models.CharField(max_length=100, blank=True, null=True)
-#     language = models.CharField(max_length=50)
-#     subject = models.TextField(blank=True, null=True)
-#     bookshelf = models.TextField(blank=True, null=True)
-#     download_count = models.IntegerField(default=0)
-
-# class BookDownloadLink(models.Model):
-#     book = models.ForeignKey(Book, related_name="download_links", on_delete=models.CASCADE)
-#     mime_type = models.CharField(max_length=50)
-#     url = models.URLField()
 
 # This is an auto-generated Django model module.
 # You'll have to do the following manually to clean this up:

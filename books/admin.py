@@ -1,22 +1,4 @@
 # from django.contrib import admin
-# from .models import Book, BookDownloadLink
-
-# class BookDownloadLinkInline(admin.TabularInline):
-#     model = BookDownloadLink
-#     extra = 1  # Number of empty rows to display for adding new links
-
-# @admin.register(Book)
-# class BookAdmin(admin.ModelAdmin):
-#     list_display = ('id', 'title', 'author_name', 'genre', 'language', 'download_count')
-#     search_fields = ('title', 'author_name', 'language', 'subject', 'bookshelf')
-#     list_filter = ('language', 'genre')
-#     inlines = [BookDownloadLinkInline]  # Adds inline editing for download links
-
-# @admin.register(BookDownloadLink)
-# class BookDownloadLinkAdmin(admin.ModelAdmin):
-#     list_display = ('id', 'mime_type', 'url', 'book')
-#     search_fields = ('mime_type', 'url')
-
 
 from django.contrib import admin
 from .models import (

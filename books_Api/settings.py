@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'new_book_pro', # ap_newbooks
         'USER': 'postgres',
-        'PASSWORD': 'nima@space123',
+        'PASSWORD': 'nima321',
         'HOST': 'localhost',
         'PORT': '5432',
     }
