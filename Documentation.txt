@@ -5,7 +5,7 @@
 To clone the repository, use the following commands:
 
 ```bash
-git clone https://github.com/your-repo-url.git
+git clone https://github.com/your-repo-url.git  
 cd your-repo-directory
 ```
 
@@ -61,13 +61,6 @@ python manage.py runserver
 
 ### **Deploy the Application on AWS**
 
-#### **1. Launch an EC2 Instance**
-
-1. Launch an Amazon EC2 instance (Ubuntu preferred).
-2. Connect to the instance:
-   ```bash
-   ssh -i "your-key-pair.pem" ubuntu@ec2-your-instance-public-ip.compute-1.amazonaws.com
-   ```
 
 #### **2. Set Up the Instance**
 
@@ -101,24 +94,6 @@ Run the Django application using:
 python manage.py runserver 0.0.0.0:8000
 ```
 
-#### **6. Install Nginx for Reverse Proxy**
-
-Install and configure Nginx:
-
-```bash
-sudo apt install nginx
-```
-
-#### **7. Set Up HTTPS with Certbot**
-
-Install Certbot and configure HTTPS:
-
-```bash
-sudo apt install certbot python3-certbot-nginx
-sudo certbot --nginx
-```
-
----
 
 ### **Database Models**
 
